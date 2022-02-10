@@ -60,7 +60,6 @@ public class SudokuFrame extends JFrame {
 		windowPanel.add(sPanel); //Adds the white panel created in SudokuPanel to the window. ?
 		
 		this.add(windowPanel); //Shows the ?
-
 	}
 
 	/**
