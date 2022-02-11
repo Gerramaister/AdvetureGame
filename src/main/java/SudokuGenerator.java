@@ -6,8 +6,8 @@ import java.util.Random;
 public class SudokuGenerator {
 
 	public SudokuPuzzle generateRandomSudoku(SudokuPuzzleType puzzleType) {
-		SudokuPuzzle = new SudokuPuzzle(puzzleType.getRows(), puzzleType.getColumns(),
-				puzzleType.getBoxWidth(), puzzleType.getBoxHeight(), puzzleType.getValidValues());
+		SudokuPuzzle = new SudokuPuzzle(puzzleType.getROWS(), puzzleType.getCOLOUMS(),
+				puzzleType.getBOXWIDTH(), puzzleType.getBOXHEIGHT(), puzzleType.getVALIDVALUES());
 		
 		
 		
