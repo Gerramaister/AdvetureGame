@@ -32,11 +32,16 @@ public class SudokuFrame extends JFrame {
 		/**
 		 * This is for the MenuBar.
 		 */
-		JMenuBar menuBar = new JMenuBar(); // Needed to create a menu bar.
+		JMenuBar menuBar = new JMenuBar(); // Creates an instans/object of JMenuBar to use.
 		JMenu file = new JMenu("Game"); // file variable name as in the "File"-menu in software.
 		JMenu newGame = new JMenu("New Game"); // Set the name of the new game option variable.
+		
+		
+		this.setJMenuBar(menuBar); // Activates the menuBar.
+		menuBar.add(file); // Add the "Game" drop down menu to the menu bar.
+		file.add(newGame); // Add the "New Game" (newGame) option in the "Game" (file) menu.
 
-		JMenuItem sixBySixGame = new JMenuItem("6 by 6 Game"); //Sets the string name for the item variable.
+		JMenuItem sixBySixGame = new JMenuItem("6 by 6 Game"); //Sets the string name for the object variable.
 		JMenuItem nineByNineGame = new JMenuItem("9 by 9 Game");
 		JMenuItem twelveByTwelveGame = new JMenuItem("12 by 12 Game");
 
@@ -44,16 +49,12 @@ public class SudokuFrame extends JFrame {
 		newGame.add(nineByNineGame);
 		newGame.add(twelveByTwelveGame);
 
-		this.setJMenuBar(menuBar); // Instead of using private members and this = this in constructor?
-		menuBar.add(file); // Add the "Game" drop down menu to the menu bar.
-		file.add(newGame); // Add the "New Game" (newGame) option in the "Game" (file) menu.
-		
 		
 		JPanel windowPanel = new JPanel(); 
-		windowPanel.setLayout(new FlowLayout()); //Creates a layout with a centred alignment and a default 5-unit horizontal and vertical gap.
+		windowPanel.setLayout(new FlowLayout()); //Activates and creates a layout with a centred alignment and a default 5-unit horizontal and vertical gap.
 
 		
-		windowPanel.setPreferredSize(new Dimension(800, 900)); //? Gör inget?
+		windowPanel.setPreferredSize(new Dimension(800, 9000)); //? Gör inget?
 		
 		sPanel = new SudokuPanel(); //Create a object to add to our window.
 		
