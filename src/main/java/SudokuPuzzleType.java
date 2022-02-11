@@ -7,14 +7,14 @@ public enum SudokuPuzzleType {
 	public final int COLOUMS;
 	public final int BOXWIDTH;
 	public final int BOXHEIGHT;
-	public final String[] VALIDVALUS;
+	public final String[] VALIDVALUES;
 	
-	private SudokuPuzzleType(int ROWS, int COLOUMS, int BOXWIDTH, int BOXHEIGHT, String[] VALIDVALUS) {
+	private SudokuPuzzleType(int ROWS, int COLOUMS, int BOXWIDTH, int BOXHEIGHT, String[] VALIDVALUES) {
 		this.ROWS = ROWS;
 		this.COLOUMS = COLOUMS;
 		this.BOXWIDTH = BOXWIDTH;
 		this.BOXHEIGHT = BOXHEIGHT;
-		this.VALIDVALUS = VALIDVALUS;
+		this.VALIDVALUES = VALIDVALUES;
 	}
 
 	public int getROWS() {
@@ -33,8 +33,8 @@ public enum SudokuPuzzleType {
 		return BOXHEIGHT;
 	}
 
-	public String[] getVALIDVALUS() {
-		return VALIDVALUS;
+	public String[] getVALIDVALUES() {
+		return VALIDVALUES;
 	}
 	
 	
